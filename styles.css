@@ -1,0 +1,146 @@
+:root {
+    /* Primary colors */
+    --soft-blue: hsl(215, 51%, 70%); 
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral colors */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --font: 'Outfit', sans-serif;
+}
+
+/*I took this from Paul Irish Page https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+html {
+    box-sizing: border-box;
+
+    font-size: 62.5%;
+}
+*, *:before, *:after, body {
+    box-sizing: inherit;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Globals */
+
+
+body{
+    font-family: var(--font);
+    color: var(--cyan);
+    background-color: var(--main-bg);
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Utility classes */
+
+.card__creator_white {
+    color: var(--white);
+}
+
+.card__description_margin {
+    margin-top: 1.5rem;
+}
+
+/* Component styles */
+
+.card {
+    width: 90%;
+    max-width: 30rem;
+    padding: 2rem;
+    margin: 5rem auto;
+    background-color: var(--card-bg);
+    border-radius: 1.5rem;
+    perspective: 1px;
+    overflow: hidden;
+
+}
+ 
+.card__images-container {
+    position: relative;
+}
+
+.simple {
+    position: absolute;
+    background-color: var(--cyan);
+    opacity: 0;
+    width: 87%;
+    height: 50.5%;
+    top: 20px;
+}
+
+.simple:hover {
+    opacity: 0.7;
+}
+
+.card__img-2 {
+    position: absolute;
+    top: 109px;
+    left: 106px;
+}
+
+/* .card__img-2 {
+    position: absolute;
+    top: 135px;
+    left: 126px;
+    opacity: 0;
+}
+
+.card__img-2:hover{
+    opacity: 1;
+}
+ */
+
+
+.card__img-1:hover{
+    /* background-image: url(images/icon-view.svg); */
+    filter: hue-rotate(90deg);
+    background-image: url('images/icon-view.svg');
+}
+
+
+.card__icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__icons_icon-1{
+    font-weight: bold;
+}
+
+.card__line {
+    border: 1px solid var(--line);
+}
+
+.card__creator {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__jules {
+    align-self: center;
+}
+
+.card__img-container {
+    width: 15%;
+}
+
