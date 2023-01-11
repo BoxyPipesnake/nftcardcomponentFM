@@ -65,13 +65,14 @@ h1 {
     position: relative;
 }
 
-.test::after{
+.test::after {
     content: "";
-    visibility: hidden;
+    display: none;
     position: absolute;
-    top: 121px;
-    left: 120px;
+    top: 0;
+    left: 0;
     background-image: url(images/icon-view.svg);
+    background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -83,9 +84,8 @@ h1 {
 }
 
 .test:hover::after {
-    visibility: visible;
+    display: block;
 }
-
 
 .card {
     width: 90%;
