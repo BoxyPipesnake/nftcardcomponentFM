@@ -136,6 +136,10 @@ h1 {
     align-self: center;
 }
 
+.card__jules-span {
+    color: var(--white);
+}
+
 .card__jules-span:hover {
     cursor: pointer;
     color: var(--cyan);
